@@ -23,6 +23,12 @@ header .category > li > a {
     color: #fff;
 }
 header .category > li:hover > a { background-color: #96da47; }
+header .category > li:hover .sub {
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all .6s ease;
+    opacity: 1; 
+}
 
 
 .sub {
@@ -32,6 +38,9 @@ header .category > li:hover > a { background-color: #96da47; }
     top: 100%; left: 0;
     width: 500px;
     border-top: 1px solid #96da47;
+    visibility: hidden;
+    transform: translateY(20px);
+    opacity: 0;
 }
 .submenu { float: left; width: 25%; }
 .submenu li {}
@@ -40,5 +49,8 @@ header .category > li:hover > a { background-color: #96da47; }
     display: block;
     height: 28px; line-height: 28px;
 }
-.submeun li a:hover { color: #96da47; }
+.submenu li a:hover { color: #96da47; }
 .submenu li.subtitle { color: #fff; font-size: 15px; margin-bottom: 10px; }
+
+
+.slider .banner { width: 100%; }
